@@ -1,0 +1,18 @@
+.tipButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.tipButtons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: var(--very-dark-cyan);
+  color: var(--white);
+}
+
+.tipButtons .selected {
+  background-color: var(--strong-cyan);
+}
