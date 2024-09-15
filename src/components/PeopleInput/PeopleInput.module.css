@@ -1,0 +1,14 @@
+.peopleInput {
+  background-image: url("../../assets/images/icon-person.svg"); /* Path to your dollar icon */
+  background-position: 10px center; /* Position the icon */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  padding-left: 1rem; /* Add padding so the text doesn't overlap the icon */
+  background-color: var(
+    --very-light-grayish-cyan
+  ); /* Optional: background color */
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  text-align: end;
+  color: var(--dark-grayish-cyan);
+}

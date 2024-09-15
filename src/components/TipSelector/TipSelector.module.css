@@ -1,18 +1,39 @@
 .tipButtons {
-  display: flex;
-  gap: 10px;
+  display: grid; 
+  grid-auto-flow: row dense; 
+  grid-auto-columns: 1fr; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 1rem 1rem; 
+  grid-template-areas: 
+    ". . ."
+    ". . ."; 
+  justify-content: stretch; 
+  align-content: stretch; 
+  align-items: stretch; 
+  width: 93%; 
 }
 
-.tipButtons button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  background-color: var(--very-dark-cyan);
+.selected {
+  background-color: var(--strong-cyan);
   color: var(--white);
 }
 
-.tipButtons .selected {
-  background-color: var(--strong-cyan);
+button {
+  border-radius: 5px;
+  border: none;
+  background-color: var(--very-dark-cyan);
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.customInput {
+  border-radius: 5px;
+  background-color: var(--very-light-grayish-cyan);
+  font-weight: bold;
+  text-align: center;
+  border: none;
 }

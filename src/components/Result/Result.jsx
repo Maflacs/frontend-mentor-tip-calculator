@@ -1,21 +1,27 @@
 import React from "react";
-import styles from "./Result.module.css"
+import styles from "./Result.module.css";
+import ResetButton from "../ResetButton/ResetButton";
 
-const Result = ({ tipAmount, totalAmount }) => {
+const Result = ({ tipAmount, totalAmount, handleReset }) => {
   return (
     <div className={styles.resultContainer}>
-      <div className={styles.resultItem}>
-        <div>
-          Tip Amount <span>/ person</span>
+      <div>
+        <div className={styles.resultItem}>
+          <div>
+            Tip Amount <br></br>
+            <span>/ person</span>
+          </div>
+          <div className={styles.amount}>${tipAmount}</div>
         </div>
-        <div className={styles.amount}>${tipAmount}</div>
-      </div>
-      <div className={styles.resultItem}>
-        <div>
-          Total <span>/ person</span>
+        <div className={styles.resultItem}>
+          <div>
+            Total <br></br>
+            <span>/ person</span>
+          </div>
+          <div className={styles.amount}>${totalAmount}</div>
         </div>
-        <div className={styles.amount}>${totalAmount}</div>
       </div>
+      <ResetButton handleReset={handleReset} />
     </div>
   );
 };

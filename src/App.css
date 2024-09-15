@@ -12,33 +12,38 @@
 /* Global Styles */
 body {
   font-family: "Space Mono", monospace;
-  background-color: var(--very-light-grayish-cyan);
-  color: var(--very-dark-cyan);
+  font-weight: 700;
+  font-size: 24px;
+  background-color: var(--light-grayish-cyan);
+  color: var(--dark-grayish-cyan);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
+  overflow: hidden;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
+  width: 70%;
 }
 
 .splitter-title {
   font-size: 2rem;
   margin-bottom: 20px;
   text-align: center;
+  letter-spacing: .8rem;
 }
 
 .calculator {
   background-color: var(--white);
-  padding: 20px;
+  padding: 1.5rem;
   border-radius: 10px;
   display: flex;
-  gap: 20px;
+  gap: 1rem;
 }
 
 .inputs,
@@ -48,7 +53,7 @@ body {
 
 /* Input Groups */
 .input-group {
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 .input-group label {
@@ -58,14 +63,22 @@ body {
 }
 
 .input-group input {
-  width: 100%;
-  padding: 10px;
+  font-family: 'Space Mono', monospace;
+  width: 90%;
+  padding: .5rem;
   font-size: 1.5rem;
-  border: 2px solid var(--light-grayish-cyan);
   border-radius: 5px;
-  color: var(--very-dark-cyan);
+  color: var(--dark-grayish-cyan);
   background-color: var(--very-light-grayish-cyan);
 }
+
+input::placeholder {
+  font-family: 'Space Mono', monospace; /* Custom font */
+  font-size: 1.5rem;                    /* Font size */
+  color: var(--dark-grayish-cyan);           /* Color */
+  font-weight: 700;                     /* Font weight */
+}
+
 
 
 
