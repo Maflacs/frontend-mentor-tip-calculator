@@ -1,14 +1,36 @@
 .peopleInput {
-  background-image: url("../../assets/images/icon-person.svg"); /* Path to your dollar icon */
+  background-image: url("../../assets/images/icon-person.svg"); /* Path to the person icon */
   background-position: 10px center; /* Position the icon */
   background-repeat: no-repeat; /* Prevent the image from repeating */
   padding-left: 1rem; /* Add padding so the text doesn't overlap the icon */
-  background-color: var(
-    --very-light-grayish-cyan
-  ); /* Optional: background color */
-  border: none;
+  background-color: var(--very-light-grayish-cyan); /* Optional: background color */
   border-radius: 5px;
   font-size: 1.5rem;
   text-align: end;
   color: var(--dark-grayish-cyan);
+  width: 90%;
+  border: 3px solid transparent; /* Default to transparent border */
+  transition: border 0.3s ease; /* Smooth transition for the border */
+  outline: none; /* Remove the default black outline */
+}
+
+/* When hovering over or focusing the input, apply the cyan border */
+.peopleInput:hover,
+.peopleInput:focus {
+  border: 3px solid var(--strong-cyan); /* Cyan border on hover/focus */
+  cursor: pointer;
+}
+
+/* Error state for when people == 0 */
+.error {
+  border: 3px solid red; /* Red border when people = 0 */
+}
+
+.zero {
+  color: red;
+  font-size: .9rem;
+  margin-right: 2.7rem;
+  float: inline-end;
+  margin-top: 1rem;
+  font-weight: 300;
 }

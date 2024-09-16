@@ -9,5 +9,19 @@
   border-radius: 5px;
   font-size: 1.5rem;
   text-align: end;
-  border: none;
+  border: 3px solid transparent;
+  width: 90%;
+  transition: border 0.3s ease; /* Smooth transition for the border */
+  outline: none; /* Remove the default black outline */
+  color: var(--strong-cyan);
+}
+
+.billInput:hover, 
+.billInput:focus {
+  border: 3px solid var(--strong-cyan);
+  cursor: pointer;
+}
+
+.billInput:active {
+  border: 3px solid var(--strong-cyan);
 }

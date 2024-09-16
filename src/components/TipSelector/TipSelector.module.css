@@ -12,12 +12,12 @@
   justify-content: stretch; 
   align-content: stretch; 
   align-items: stretch; 
-  width: 93%; 
+  width: 90%; 
 }
 
 .selected {
   background-color: var(--strong-cyan);
-  color: var(--white);
+  color: var(--very-dark-cyan);
 }
 
 button {
@@ -30,10 +30,26 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: var(--light-grayish-cyan);
+  color: var(--very-dark-cyan)
+}
+
 .customInput {
   border-radius: 5px;
   background-color: var(--very-light-grayish-cyan);
   font-weight: bold;
   text-align: center;
   border: none;
+  width: 100%;
+  border: 3px solid transparent;
+}
+
+.customInput:hover {
+  border: 3px solid var(--strong-cyan);
+  cursor: pointer;
+}
+
+.customInput::placeholder {
+  font-size: 1.3rem;
 }
