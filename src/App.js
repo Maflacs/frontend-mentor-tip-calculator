@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="container">
       <div className="splitter-title">
-        <img src={logo} alt="splitter logo" />
+        <img src={logo} alt="splitter logoq" />
       </div>
       <div className="calculator">
         <div className="inputs">

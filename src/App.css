@@ -37,10 +37,8 @@ body {
 }
 
 .splitter-title {
-  font-size: 1.5rem;
   margin: 7rem auto;
   text-align: center;
-  letter-spacing: .8rem;
 }
 
 .calculator {
