@@ -24,7 +24,6 @@ body {
   color: var(--dark-grayish-cyan);
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100vh;
   overflow: hidden;
 }
@@ -38,15 +37,15 @@ body {
 }
 
 .splitter-title {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  margin: 7rem auto;
   text-align: center;
   letter-spacing: .8rem;
 }
 
 .calculator {
   background-color: var(--white);
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 10px;
   display: flex;
   gap: 1rem;
@@ -86,7 +85,17 @@ input::placeholder {
   font-weight: 700;                     /* Font weight */
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1000px) {
+  .calculator {
+    flex-direction: column;
+  }
+
+  .splitter-title {
+    margin: 3rem auto;
+  }
+}
+
+@media (max-width: 500px) {
   body {
     margin: 0;
     font-size: 20px;
