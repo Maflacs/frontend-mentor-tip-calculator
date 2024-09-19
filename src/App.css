@@ -86,7 +86,7 @@ input::placeholder {
   font-weight: 700;                     /* Font weight */
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 450px) {
   body {
     margin: 0;
     font-size: 20px;
