@@ -3,6 +3,7 @@ import BillInput from "./components/BillInput/BillInput";
 import TipSelector from "./components/TipSelector/TipSelector";
 import PeopleInput from "./components/PeopleInput/PeopleInput";
 import Result from "./components/Result/Result";
+import logo from "./assets/images/logo.svg";
 import "./App.css";
 
 function App() {
@@ -28,9 +29,7 @@ function App() {
   return (
     <div className="container">
       <div className="splitter-title">
-        SPLI
-        <br />
-        TTER
+        <img src={logo} alt="splitter logo" />
       </div>
       <div className="calculator">
         <div className="inputs">
