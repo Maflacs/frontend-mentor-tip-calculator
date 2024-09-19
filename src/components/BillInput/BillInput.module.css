@@ -25,3 +25,9 @@
 .billInput:active {
   border: 3px solid var(--strong-cyan);
 }
+
+@media (max-width: 1000px) {
+  .billInput {
+    width: 100%;
+  }
+}

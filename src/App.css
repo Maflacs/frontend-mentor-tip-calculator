@@ -86,6 +86,19 @@ input::placeholder {
   font-weight: 700;                     /* Font weight */
 }
 
+@media (max-width: 1000px) {
+  body {
+    margin: 0;
+    font-size: 20px;
+  }
+  .container {
+    width: 100%;
+  }
+  .calculator {
+    flex-direction: column;
+  }
+}
+
 
 
 

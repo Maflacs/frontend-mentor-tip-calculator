@@ -34,3 +34,13 @@
   margin-top: 1rem;
   font-weight: 300;
 }
+
+@media (max-width: 1000px) {
+  .peopleInput {
+    width: 100%;
+  }
+
+  .zero {
+    margin-right: 0;
+  }
+}

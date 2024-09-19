@@ -53,3 +53,9 @@ button:hover {
 .customInput::placeholder {
   font-size: 1.3rem;
 }
+
+@media (max-width: 1000px) {
+  .tipButtons {
+    width: 100%;
+  }
+}
